@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 :root {
-  --jet: #1f1f1f;
-  --turquoise: #48e5c2ff;
-  --seasalt: #fcfaf9ff;
-  --desert-sand: #f3d3bdff;
-  --davys-gray: #5e5e5eff;
+  /* --primary: #1c1f33; */
+  --primary: #272932;
+  --secondary: #f05d5e;
+  --secondary-shade: #f8cbce;
+  --body: #f0f4ef;
 }
 
 * {
@@ -15,5 +16,5 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: var(--seasalt);
+  background-color: var(--body);
 }

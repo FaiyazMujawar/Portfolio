@@ -1,4 +1,6 @@
 .section {
-  background-color: var(--jet);
-  color: var(--seasalt);
+  background-color: var(--primary);
+  width: 100%;
+  height: 80vh;
+  color: var(--body);
 }

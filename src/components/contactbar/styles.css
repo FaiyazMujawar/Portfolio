@@ -1,4 +1,12 @@
 .contact-bar > a {
   text-decoration: none;
-  color: #495057;
+}
+
+.contact-bar {
+  justify-content: space-between;
+}
+
+.contact-bar .name {
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.5rem;
 }

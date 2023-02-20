@@ -4,10 +4,12 @@ export const navbarSlice = createSlice({
   name: 'navbarSlice',
   initialState: {
     currentNavItem: 'HOME',
+    currentNavItemName: 'Home',
   },
   reducers: {
-    setNavItem: (state, { payload: { navItem } }) => {
+    setNavItem: (state, { payload: { navItem, navItemName } }) => {
       state.currentNavItem = navItem;
+      state.currentNavItemName = navItemName;
     },
   },
 });

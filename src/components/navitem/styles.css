@@ -1,0 +1,12 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--secondary);
+  font-size: bolder;
+  background-color: var(--secondary-shade);
+}
