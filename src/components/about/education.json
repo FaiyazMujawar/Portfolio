@@ -1,0 +1,22 @@
+[
+    {
+        "institute": "Zeal College of Engineering & Research, Pune",
+        "course": "Bachelor of Engineering, Computer Engineering",
+        "startYear": "August, 2017",
+        "endYear": "March, 2021",
+        "result": {
+            "indicator": "CGPA",
+            "result": "8.8"
+        }
+    },
+    {
+        "institute": "M.I.T Junior College, Pune",
+        "course": "Higher Secondary Education, Maharashtra State Board",
+        "startYear": "August, 2015",
+        "endYear": "July, 2017",
+        "result": {
+            "indicator": "Percentage",
+            "result": "81.38%"
+        }
+    }
+]

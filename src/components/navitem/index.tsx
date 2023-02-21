@@ -3,13 +3,12 @@ import { NavbarItems } from '../navbar';
 import { getNavIcon } from './util';
 import { setNavItem } from '../../store/NavbarSlice';
 import './styles.css';
-import { Tooltip } from 'antd';
-import { TooltipPlacement } from 'antd/es/tooltip';
+import { Tooltip } from '@mui/material';
 
 interface NavItemProps {
   item: NavbarItems;
   name: string;
-  tooltipPosition: TooltipPlacement;
+  tooltipPosition: 'top' | 'bottom' | 'right' | 'left';
 }
 
 function NavItem({ item, name, tooltipPosition }: NavItemProps) {
@@ -30,7 +29,7 @@ function NavItem({ item, name, tooltipPosition }: NavItemProps) {
   const selected = isSelected(item, selectedNavItem);
 
   return (
-    <Tooltip title={name} placement={tooltipPosition ?? 'top'} arrow={false}>
+    <Tooltip title={name} placement={tooltipPosition} arrow>
       <div
         className={`nav-item rounded ${selected ? 'selected' : ''}`}
         onClick={setSelected}

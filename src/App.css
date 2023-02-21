@@ -7,6 +7,12 @@
   padding: 0 8rem;
 }
 
+@media screen and (max-width: 800px) {
+  .App {
+    padding: 0 1rem;
+  }
+}
+
 .icon {
   color: #6c757d;
 }

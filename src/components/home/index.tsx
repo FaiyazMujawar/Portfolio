@@ -1,4 +1,3 @@
-import { Divider } from 'antd';
 import './styles.css';
 
 function Home() {
@@ -6,7 +5,7 @@ function Home() {
     <div className='home h-100 d-flex'>
       <div className='profile-img'>
         {/* todo: enhace image */}
-        <img  src='/profile1.png' alt='profile-img' />
+        <img src='/profile1.png' alt='profile-img' />
       </div>
       <div className='name d-flex justify-content-center flex-column p-5'>
         <h5>I'm</h5>
