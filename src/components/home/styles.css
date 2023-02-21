@@ -1,0 +1,31 @@
+.home > .name {
+  height: 100%;
+  width: 60%;
+}
+
+.firstname,
+.lastname {
+  font-family: 'Monoton', cursive;
+  font-size: 5vw;
+}
+
+.profile-img {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  background-position: bottom 10%;
+  border-radius: 5px 0 0 5px;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.lastname {
+  color: var(--secondary);
+}
+
+.home h6 {
+  color: var(--body);
+  letter-spacing: 5pt;
+}
