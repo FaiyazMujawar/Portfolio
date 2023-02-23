@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Banking Application API",
+        "description": "A REST API for a demo banking application",
+        "repository": "https://github.com/FaiyazMujawar/spring-banking-demo",
+        "image": "https://img.freepik.com/free-vector/mobile-banking-concept-illustration_114360-13928.jpg?w=740&t=st=1677131063~exp=1677131663~hmac=f776d9ae49f2981c535da4e3618c2b336bdcf3efa8221b54426f00634343b28a",
+        "techStack": [
+            "Spring Boot",
+            "Java"
+        ]
+    },
+    {
+        "name": "Grievance System API",
+        "description": "A REST API for an online grievance portal system",
+        "repository": "https://github.com/Zeal-Student-Developers/issue-tracker",
+        "image": "https://img.freepik.com/free-vector/flat-design-person-making-complain_23-2148958465.jpg?w=740&t=st=1677131652~exp=1677132252~hmac=9fcb5421ea2eb688e68c937f108c74201ed2e0faea39b774147895b1bfde0964",
+        "techStack": [
+            "Node.js",
+            "expressjs"
+        ]
+    },
+    {
+        "name": "ClubSocial",
+        "description": "A social media webapp using React.js",
+        "repository": "https://github.com/Zeal-Student-Developers/issue-tracker",
+        "image": "https://img.freepik.com/free-vector/connected-world-concept-illustration_114360-3027.jpg?w=740&t=st=1677131778~exp=1677132378~hmac=37a929aafbdf2962df75ea755636560aa82abb099ff9df3e35859d44d4116e37",
+        "techStack": [
+            "React.js"
+        ]
+    },
+    {
+        "name": "Calculator App",
+        "description": "A calculator mobile app built using Dart & Flutter",
+        "repository": "https://github.com/Zeal-Student-Developers/issue-tracker",
+        "image": "https://img.freepik.com/free-vector/calculator_1284-3534.jpg?w=740&t=st=1677131811~exp=1677132411~hmac=20524b7f1eea35daceb2bc5a3f7fe553cea8f8cdc56ba725b55e6e95ef0b1553",
+        "techStack": [
+            "Dart",
+            "Flutter"
+        ]
+    }
+]

@@ -21,3 +21,21 @@
   color: var(--secondary);
   stroke: var(--secondary);
 }
+
+a {
+  text-decoration: none;
+  color: var(--body);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
