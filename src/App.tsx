@@ -1,12 +1,12 @@
-import { createTheme, ThemeProvider } from '@mui/material';
 import { useSelector } from 'react-redux';
 import About from './components/about';
 import ContactBar from './components/contactbar';
 import Home from './components/home';
 import NavBar, { NavbarItems } from './components/navbar';
 import Section from './components/section';
-import './App.css';
 import Experience from './components/experience';
+import { theme, ConfigProvider } from 'antd';
+import './App.css';
 
 function App() {
   const currentNavItem: NavbarItems = useSelector(
@@ -17,12 +17,6 @@ function App() {
     (state: any) => state.navbar.currentNavItemName
   );
 
-  const darkTheme = createTheme({
-    palette: {
-      mode: 'dark',
-    },
-  });
-
   const components = {
     HOME: <Home />,
     ABOUT: <About></About>,
@@ -31,7 +25,7 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
       <div className='App'>
         <ContactBar />
         <Section heading={currentNavItemName}>
@@ -39,7 +33,7 @@ function App() {
         </Section>
         <NavBar />
       </div>
-    </ThemeProvider>
+    </ConfigProvider>
   );
 }
 

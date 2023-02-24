@@ -3,7 +3,7 @@ import { NavbarItems } from '../navbar';
 import { getNavIcon } from './util';
 import { setNavItem } from '../../store/NavbarSlice';
 import './styles.css';
-import { Tooltip } from '@mui/material';
+import { Tooltip } from 'antd';
 
 interface NavItemProps {
   item: NavbarItems;

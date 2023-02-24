@@ -1,13 +1,7 @@
-import {
-  Button,
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-} from '@mui/material';
+import { Button, Card } from 'antd';
 import '../styles.css';
+
+const { Meta } = Card;
 
 export interface IProject {
   name: string;
@@ -24,27 +18,18 @@ interface ProjectProps {
 function Project({ project }: ProjectProps) {
   return (
     <div className='project'>
-      <Card sx={{ minHeight: '300px' }}>
-        <CardMedia
-          sx={{ textAlign: 'center', overflowY: 'hidden', height: '200px' }}
-        >
-          <img src={project.image} alt='image' width={'100%'} />
-        </CardMedia>
-        <CardContent>
-          <Typography gutterBottom variant='h6' component='div'>
-            {project.name}
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            {project.description}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size='small'>
-            <a href={project.repository} target='_tab'>
-              View on Github
-            </a>
-          </Button>
-        </CardActions>
+      <Card
+        className='h-100 position-relative'
+        hoverable
+        cover={<img src={project.image} alt='image' width={'100%'} />}
+      >
+        <h5>{project.name}</h5>
+        <p className='pb-3'>{project.description}</p>
+        <div className='position-absolute bottom-0 pb-3'>
+          <a className='' href={project.repository}>
+            VIEW ON GITHUB
+          </a>
+        </div>
       </Card>
     </div>
   );

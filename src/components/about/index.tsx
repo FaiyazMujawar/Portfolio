@@ -1,5 +1,5 @@
+import { Timeline } from 'antd';
 import { ArrowUpRight } from 'react-feather';
-import Timeline from '../timeline';
 import education from './education.json';
 import School, { ISchool } from './school';
 import './styles.css';
@@ -22,7 +22,7 @@ function About() {
       </div>
 
       <h4>Education</h4>
-      <Timeline children={education.map(school)} />
+      <Timeline mode='left' items={education.map(school)} />
       <a href='/public/resume.pdf' target={'_tab'}>
         Know more about me!
         <ArrowUpRight color='#f05d5e' size={'15px'} />
@@ -34,7 +34,7 @@ function About() {
 function school(data: ISchool) {
   return {
     label: `${data.startYear} - ${data.endYear ?? 'Present'}`,
-    content: <School school={data} />,
+    children: <School school={data} />,
   };
 }
 
