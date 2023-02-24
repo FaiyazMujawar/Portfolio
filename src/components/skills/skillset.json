@@ -1,0 +1,82 @@
+{
+    "Languages": [
+        {
+            "label": "Java",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "Javascript",
+            "score": 4,
+            "image": ""
+        },
+        {
+            "label": "Typescript",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "C++",
+            "score": 2,
+            "image": ""
+        }
+    ],
+    "Scripts": [
+        {
+            "label": "HTML",
+            "score": 4,
+            "image": ""
+        },
+        {
+            "label": "CSS",
+            "score": 3,
+            "image": ""
+        }
+    ],
+    "Databases": [
+        {
+            "label": "PostgreSQL",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "MongoDB",
+            "score": 4,
+            "image": ""
+        },
+        {
+            "label": "MySQL",
+            "score": 3,
+            "image": ""
+        }
+    ],
+    "Frameworks": [
+        {
+            "label": "Spring Boot",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "React",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "Node.js",
+            "score": 4,
+            "image": ""
+        }
+    ],
+    "Others": [
+        {
+            "label": "Git/Github",
+            "score": 3,
+            "image": ""
+        },
+        {
+            "label": "REST Architecture",
+            "score": 3,
+            "image": ""
+        }
+    ]
+}

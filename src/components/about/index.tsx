@@ -33,7 +33,12 @@ function About() {
 
 function school(data: ISchool) {
   return {
-    label: `${data.startYear} - ${data.endYear ?? 'Present'}`,
+    label: (
+      <div>
+        {`${data.startYear}`} &nbsp; — &nbsp; {`${data.endYear ?? 'Present'}`}
+      </div>
+    ),
+    color: 'var(--secondary)',
     children: <School school={data} />,
   };
 }

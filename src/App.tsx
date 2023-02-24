@@ -7,6 +7,7 @@ import Section from './components/section';
 import Experience from './components/experience';
 import { theme, ConfigProvider } from 'antd';
 import './App.css';
+import Skills from './components/skills';
 
 function App() {
   const currentNavItem: NavbarItems = useSelector(
@@ -21,7 +22,7 @@ function App() {
     HOME: <Home />,
     ABOUT: <About></About>,
     EXPERIENCE: <Experience />,
-    SKILLS: <div></div>,
+    SKILLS: <Skills />,
   };
 
   return (

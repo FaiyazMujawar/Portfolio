@@ -30,7 +30,11 @@ function Experience() {
 
 function timelineChild(org: Org) {
   return {
-    label: `${org.start} - ${org.end ?? 'Present'}`,
+    label: (
+      <div>
+        {`${org.start}`} &nbsp; — &nbsp; {`${org.end ?? 'Present'}`}
+      </div>
+    ),
     color: 'var(--secondary)',
     children: <Organization organization={org} />,
   };
