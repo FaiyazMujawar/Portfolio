@@ -1,4 +1,19 @@
 .navbar {
-  height: 10vh;
-  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.nav-items {
+  width: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6px 5px;
+  background-color: #f0f4ef01;
+  backdrop-filter: blur(10px);
+  border: 1px solid #f0f4ef20;
+  border-radius: 30px;
 }

@@ -1,20 +1,20 @@
-import { Briefcase, Home, Tool, User } from 'react-feather';
+import { FiUser, BiBriefcase, FiTool, BiHome } from 'react-icons/all';
 import { NavbarItems } from '../navbar';
 
 export const getNavIcon = (
   type: NavbarItems,
-  color: string = '#6c757d',
+  color: string = 'var(--body)',
   classes: string = '',
   size: string | number = '30px'
 ) => {
   switch (type) {
     case 'HOME':
-      return <Home className={classes} color={color} size={size} />;
+      return <BiHome className={classes} color={color} size={size} />;
     case 'ABOUT':
-      return <User color={color} className={classes} size={size} />;
+      return <FiUser className={classes} color={color} size={size} />;
     case 'EXPERIENCE':
-      return <Briefcase color={color} className={classes} size={size} />;
+      return <BiBriefcase className={classes} color={color} size={size} />;
     case 'SKILLS':
-      return <Tool color={color} className={classes} size={size} />;
+      return <FiTool className={classes} color={color} size={size} />;
   }
 };

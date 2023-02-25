@@ -1,12 +1,37 @@
 .nav-item {
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 6px;
   cursor: pointer;
+  margin: 0 2px;
 }
 
 .selected {
+  color: var(--body);
+  background-color: var(--secondary);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.selected svg {
+  stroke: var(--body);
+}
+
+.nav-item .icon {
+  color: var(--body);
+  margin-right: 5px;
+}
+
+.nav-item.selected {
+  padding: 0 10px;
+}
+
+.nav-item .icon:hover {
   color: var(--secondary);
-  font-size: bolder;
-  background-color: var(--secondary-shade);
+}
+
+@media (max-width: 500px) {
+  .nav-item.selected .icon {
+    display: none;
+  }
 }

@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import About from './components/about';
 import ContactBar from './components/contactbar';
 import Home from './components/home';
-import NavBar, { NavbarItems } from './components/navbar';
+import { NavbarItems } from './components/navbar';
 import Section from './components/section';
 import Experience from './components/experience';
 import { theme, ConfigProvider } from 'antd';
@@ -18,11 +18,16 @@ function App() {
     (state: any) => state.navbar.currentNavItemName
   );
 
+  const HOME = <Home />;
+  const ABOUT = <About />;
+  const EXPERIENCE = <Experience />;
+  const SKILLS = <Skills />;
+
   const components = {
-    HOME: <Home />,
-    ABOUT: <About></About>,
-    EXPERIENCE: <Experience />,
-    SKILLS: <Skills />,
+    HOME,
+    ABOUT,
+    EXPERIENCE,
+    SKILLS,
   };
 
   return (
@@ -32,7 +37,7 @@ function App() {
         <Section heading={currentNavItemName}>
           {components[currentNavItem]}
         </Section>
-        <NavBar />
+        {/* <NavBar /> */}
       </div>
     </ConfigProvider>
   );

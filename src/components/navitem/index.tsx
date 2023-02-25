@@ -18,24 +18,26 @@ function NavItem({ item, name, tooltipPosition }: NavItemProps) {
     (state: any) => state.navbar.currentNavItem
   );
 
-  function isSelected(selectedItem: NavbarItems, currentItem: NavbarItems) {
-    return selectedItem === currentItem;
+  function isSelected() {
+    return selectedNavItem === item;
   }
 
   function setSelected() {
     dispatch(setNavItem({ navItem: item, navItemName: name }));
   }
 
-  const selected = isSelected(item, selectedNavItem);
+  const navIcon = getNavIcon(item, 'var(--body)', 'icon', '22px');
 
   return (
     <Tooltip title={name} placement={tooltipPosition} arrow>
       <div
-        className={`nav-item rounded ${selected ? 'selected' : ''}`}
+        className={`nav-item ${isSelected() ? 'selected' : ''}`}
         onClick={setSelected}
       >
-        {getNavIcon(item, selected ? '#e84c56' : '#6c757d', 'icon pe-2')}
-        {isSelected(item, selectedNavItem) && <div>{name}</div>}
+        {navIcon}
+        {isSelected() && (
+          <div className='fw-semibold nav-item-name'>{name}</div>
+        )}
       </div>
     </Tooltip>
   );

@@ -1,22 +1,37 @@
-import { AtSign, GitHub, Linkedin, Mail, Twitter } from 'react-feather';
+import {
+  AiOutlineLinkedin,
+  MdOutlineMail,
+  AiOutlineGithub,
+  FiTwitter,
+} from 'react-icons/all';
+import { useDispatch } from 'react-redux';
+import { setNavItem } from '../../store/NavbarSlice';
 import './styles.css';
 
 function ContactBar() {
+  const dispatch = useDispatch();
   return (
-    <div className='contact-bar w-100 d-flex p-2'>
-      <div className='name'>faiyazmujawar</div>
-      <div>
+    <div className='contact-bar'>
+      <div
+        className='name'
+        onClick={() =>
+          dispatch(setNavItem({ navItem: 'HOME', navItemName: 'Home' }))
+        }
+      >
+        faiyazmujawar
+      </div>
+      <div className='nav-links'>
         <a href='mailto:mujawar.faiyaz.aziz@gmail.com' target={'_tab'}>
-          <AtSign className='icon p-2' size={'35px'} />
+          <MdOutlineMail className='icon p-2' size={'40px'} />
         </a>
         <a href='https://www.linkedin.com/in/faiyaz-mujawar' target={'_tab'}>
-          <Linkedin className='icon p-2' size={'35px'} />
+          <AiOutlineLinkedin className='icon p-2' size={'40px'} />
         </a>
         <a href='https://github.com/FaiyazMujawar' target={'_tab'}>
-          <GitHub className='icon p-2' size={'35px'} />
+          <AiOutlineGithub className='icon p-2' size={'40px'} />
         </a>
         <a href='https://twitter.com/_faiyazmujawar_' target={'_tab'}>
-          <Twitter className='icon p-2' size={'35px'} />
+          <FiTwitter className='icon p-2' size={'40px'} />
         </a>
       </div>
     </div>

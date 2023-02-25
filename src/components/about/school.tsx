@@ -15,11 +15,11 @@ interface SchoolProps {
 function School({ school }: SchoolProps) {
   return (
     <div>
-      <h5>{school.institute}</h5>
-      <h6>{school.course}</h6>
-      <p>
+      <h6>{school.institute}</h6>
+      <p className='pe-3 mb-0'>{school.course}</p>
+      <span>
         {school.result.indicator}: {school.result.result}
-      </p>
+      </span>
     </div>
   );
 }

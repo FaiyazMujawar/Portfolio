@@ -1,10 +1,11 @@
+import NavBar from '../navbar';
 import './styles.css';
 
-function Section({ heading, children }: any) {
+function Section({ children }: any) {
   return (
     <div className='section rounded-3 shadow-lg'>
-      {/* <h4>{heading}</h4> */}
       {children}
+      <NavBar />
     </div>
   );
 }

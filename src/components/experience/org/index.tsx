@@ -13,8 +13,8 @@ interface OrganizationProps {
 function Organization({ organization }: OrganizationProps) {
   return (
     <div>
-      <h5>{organization.name}</h5>
-      <h6>{organization.position}</h6>
+      <h6>{organization.name}</h6>
+      <p>{organization.position}</p>
     </div>
   );
 }

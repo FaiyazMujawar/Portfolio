@@ -1,24 +1,7 @@
-.home > .name {
-  height: 100%;
-  width: 60%;
-}
-
 .firstname,
 .lastname {
   font-family: 'Monoton', cursive;
   font-size: 5vw;
-}
-
-.profile-img {
-  height: 100%;
-  width: 40%;
-  overflow: hidden;
-  background-position: bottom 10%;
-  border-radius: 5px 0 0 5px;
-}
-
-.profile-img img {
-  width: 100%;
 }
 
 .lastname {
@@ -28,4 +11,78 @@
 .home h6 {
   color: var(--body);
   letter-spacing: 5pt;
+}
+
+.home {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 3rem;
+  width: 40%;
+  overflow-y: hidden;
+}
+
+.profile-img img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  border: 8px solid var(--body);
+}
+
+.home > .name {
+  /* height: 100%; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home > .name {
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .firstname,
+  .lastname {
+    font-size: 10vw;
+  }
+
+  .profile-img {
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+  }
+
+  .profile-img > img {
+    border: 8px solid var(--body);
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .home h6 {
+    width: 100%;
+    letter-spacing: 1.1pt;
+    text-align: center;
+    font-size: 10px;
+  }
 }
