@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lobster+Two&family=Monoton&display=swap');
 
 :root {
-  /* --primary: #1c1f33; */
-  --primary: #272932;
-  --secondary: #f05d5e;
-  --secondary-shade: #f8cbce;
-  --body: #f0f4ef;
+  --primary: #2e2c2f;
+  --secondary: #d81e5b;
+  --body: #eff6ee;
 }
 
 * {
